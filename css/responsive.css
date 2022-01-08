@@ -1,0 +1,16 @@
+@media (max-width: 1000px) {
+    .navigation-ul {
+        display: none;
+    }
+    .div-i {
+        display: block;
+    }
+}
+@media (max-width: 1000px) {
+    .style-hunter-ul {
+        display: none;
+    }
+    .div-bar {
+        display: block;
+    }
+}
