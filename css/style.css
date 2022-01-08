@@ -58,12 +58,24 @@
 	padding-top: 10px;
 	justify-content: space-around;
 	align-items: center;
+	position: relative;
 }
 .meteor {
 	display: flex;
 	font-size: 45px;
 	font-family: 'Dosis', sans-serif;
 	color: black;
+}
+.image-santa {
+	width: 50px;
+	top: 40%;
+	left: 15%;
+	position: absolute;
+	animation: santa 10s infinite 2s alternate;
+}
+@keyframes santa {
+	0% {left: 15%;}
+	100% {left: 29%;}
 }
 .navigation {
 	display: flex;
@@ -72,13 +84,31 @@
     display: flex;
 }
 .navigation-li {
-	margin-left: 25px;
+	margin-left: 50px;	
 }
 .nav-a {
 	font-size: 20px;
 	font-family: 'Dosis', sans-serif;
 	color: black;
-
+	position: relative;
+	display: flex;
+}
+.nav-a:after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    margin-top: 25px;
+    position: absolute;
+	background-color: #090E1D;
+}
+.nav-a:hover:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    margin-top: 25px;
+    position: absolute;
+	background-color: #EE9F00;
+    transition-duration: 1s;
 }
 .div-i {
 	display: none;
@@ -465,6 +495,9 @@
 	border-radius: 50px;
 	margin-top: 15px;
 }
+.div-icon:hover {
+	box-shadow: 1px 1px 10px #a00943
+}
 .icon {
 	font-size: 25px;
 	color: #FFFFFF;
@@ -472,20 +505,38 @@
 .child1 {
 	background-color: #476cc2;
 }
+.child1:hover {
+	box-shadow: 1px 1px 20px #476cc2;
+}
 .child2 {
 	background-color: #51c5ff;
+}
+.child2:hover {
+	box-shadow: 1px 1px 20px #51c5ff;
 }
 .child3 {
 	background-color: #f35c48;
 }
+.child3:hover {
+	box-shadow: 1px 1px 20px #f35c48;
+}
 .child4 {
 	background-color: #f32d27;
+}
+.child4:hover {
+	box-shadow: 1px 1px 20px #f32d27;
 }
 .child5 {
 	background-color: #ab4ae4;
 }
+.child5:hover {
+	box-shadow: 1px 1px 20px #ab4ae4;
+}
 .child6 {
 	background-color: #679cda;
+}
+.child6:hover {
+	box-shadow: 1px 1px 20px #679cda;
 }
 .quantity {
 	color: #FFFFFF;
@@ -519,6 +570,7 @@
 	height: 230px;
 	max-width: 334px;
 	width: 100%;
+	box-shadow: 1px 1px 10px #a00943
 }
 .bg-image6 {
 	background-image: url(../images/post.jpg);
@@ -561,6 +613,9 @@
 	width: 100%;
 	height: 80px;
 	margin-top: 20px;
+}
+.post1:hover {
+	box-shadow: 1px 1px 10px #a00943
 }
 .bg-image7 {
 	background-image: url(../images/post1.jpg);
@@ -1324,5 +1379,15 @@
     height: 2px;
     background-color: gray;
 	position: absolute;
+}
+input {
+	color: #EE9F00;
+	font-family: 'Arya', sans-serif;
+	font-size: 16px;
+}
+textarea {
+	color: #EE9F00;
+	font-family: 'Arya', sans-serif;
+	font-size: 16px;
 }
 
