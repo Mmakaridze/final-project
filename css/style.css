@@ -3,7 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arya:wght@700&display=swap');
 .body {
-	background-color: #F5F5F5;
+	background: rgb(226,202,242);
+	background: linear-gradient(180deg, rgba(226,202,242,1) 0%, rgba(237,230,201,1) 50%, rgba(209,222,238,1) 100%);
 }
 /* ჰედერის სტილები */
 .header {
@@ -148,6 +149,16 @@
 	height: 500px;
 	width: 33.33333333333333%;
 	opacity: 0.8;
+	position: relative;
+}
+.bg-image:before {
+	content: '';
+	background: rgb(255,255,255);
+	background: linear-gradient(219deg, rgba(255,255,255,1) 0%, rgba(138,58,185,1) 100%);
+	position: absolute;
+	width: 100%;
+	height: 500px;
+	opacity: 40%;
 }
 .bg-image:hover {
 	opacity: 1;
@@ -159,6 +170,16 @@
 	height: 500px;
 	width: 33.33333333333333%;
 	opacity: 0.8;
+	position: relative;
+}
+.bg-image1:before {
+	content: '';
+	background: rgb(255,255,255);
+	background: linear-gradient(219deg, rgba(255,255,255,1) 0%, rgba(238,159,0,1) 100%);
+	position: absolute;
+	width: 100%;
+	height: 500px;
+	opacity: 40%;
 }
 .bg-image1:hover {
 	opacity: 1;
@@ -171,6 +192,16 @@
 	height: 500px;
 	width: 33.33333333333333%;
 	opacity: 0.8;
+	position: relative;
+}
+.bg-image2:before {
+	content: '';
+	background: rgb(255,255,255);
+	background: linear-gradient(219deg, rgba(255,255,255,1) 0%, rgba(39,55,160,1) 100%);
+	position: absolute;
+	width: 100%;
+	height: 500px;
+	opacity: 40%;
 }
 .bg-image2:hover {
 	opacity: 1;
@@ -211,7 +242,6 @@
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
-	margin-bottom: 65px;
 }
 .style-hunter {
 	max-width: 755px;
@@ -271,6 +301,15 @@
 	max-width: 755px;
 	width: 100%;
 	height: 285px;
+	animation: slider 9s infinite 1s;
+}
+@keyframes slider {
+	0% {background-image: url(../images/girls.jpg);}
+	20% {background-image: url(../images/hanna-postova-oha7AANDiL8-unsplash.jpg);}
+	40% {background-image: url(../images/cleo-vermij.jpg);}
+	60% {background-image: url(../images/freestocks-_3Q3tsJ01nc-unsplash.jpg);}
+	80% {background-image: url(../images/tamara-bellis-HY1fq4ZtLTE-unsplash.jpg);}
+	100% {background-image: url(../images/girls.jpg);}
 }
 .div-vogue {
 	display: flex;
@@ -339,6 +378,10 @@
     justify-content: space-evenly;
     align-items: center;
 	font-family: 'Arya', sans-serif;
+}
+.readmore:hover {
+	color: #FFFFFF;
+	box-shadow: 1px 1px 10px #090E1D;
 }
 .style-hunter-div3 {
 	display: flex;
@@ -429,6 +472,10 @@
     align-items: center;
 	font-family: 'Arya', sans-serif;
 }
+.readmore-fashion:hover {
+	color: #FFFFFF;
+	box-shadow: 1px 1px 10px #090E1D;
+}
 .hunter-div2 {
 	margin-left: 25px;
 	max-width: 365px;
@@ -487,6 +534,13 @@
 .style-hunter-div:nth-child(6) {
     background-color: #4C75A3;
 	box-shadow: 1px 1px 10px #4C75A3;
+}
+.a-icon {
+	max-width: 65px;
+    width: 100%;
+    height: 65px;
+	border-radius: 50px;
+	margin-bottom: 15px;
 }
 .div-icon {
 	display: flex;
@@ -695,6 +749,37 @@
     align-items: center;
 	font-family: 'Arya', sans-serif;
 }
+.more:hover {
+	color: #FFFFFF;
+	box-shadow: 1px 1px 10px #090E1D;
+}
+.div-loadmore {
+	margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 200px;
+    width: 100%;
+    height: 30px;
+	border-radius: 50px;
+    background-color: #c59ddd;
+}
+.loadmore {
+	font-size: 15px;
+	color: black;
+    max-width: 200px;
+    width: 100%;
+    height: 30px;
+	border-radius: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+	font-family: 'Arya', sans-serif;
+}
+.loadmore:hover {
+	color: #FFFFFF;
+	box-shadow: 1px 1px 10px #090E1D;
+}
 /* life style სექციის სტილები */
 .section-three {
 	max-width: 1200px;
@@ -702,7 +787,6 @@
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
-	margin-bottom: 65px;
 }
 .life-style {
 	max-width: 755px;
@@ -746,6 +830,15 @@
 	max-width: 755px;
 	width: 100%;
 	height: 285px;
+	animation: slider1 20s infinite 1s;
+}
+@keyframes slider1 {
+	0% {background-image: url(../images/funny.jpg);}
+	20% {background-image: url(../images/tamara-bellis-LJqRUWr9V0w-unsplash.jpg);}
+	40% {background-image: url(../images/averie-woodard-4nulm-JUYFo-unsplash.jpg);}
+	60% {background-image: url(../images/amos-bar-zeev-3yzE1SUfbwY-unsplash.jpg);}
+	80% {background-image: url(../images/clarke-sanders-ybPJ47PMT_M-unsplash.jpg);}
+	100% {background-image: url(../images/funny.jpg);}
 }
 .world {
 	background-color: #F44336;
@@ -800,6 +893,10 @@
     justify-content: space-evenly;
     align-items: center;
 	font-family: 'Arya', sans-serif;
+}
+.readmore1:hover {
+	color: #090E1D;
+	box-shadow: 1px 1px 10px #090E1D;
 }
 .life-style-div3 {
 	display: flex;
@@ -953,6 +1050,33 @@
 	margin-left: 30px;
 	color: #EE9F00;
 }
+.div-loadmore1 {
+	margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 200px;
+    width: 100%;
+    height: 30px;
+	border-radius: 50px;
+    background-color: #f07b72;
+}
+.loadmore1 {
+	font-size: 15px;
+	color: black;
+    max-width: 200px;
+    width: 100%;
+    height: 30px;
+	border-radius: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+	font-family: 'Arya', sans-serif;
+}
+.loadmore1:hover {
+	color: #FFFFFF;
+	box-shadow: 1px 1px 10px #090E1D;
+}
 /* celebrity სექციის სტილები */
 .section-four {
 	max-width: 1200px;
@@ -960,7 +1084,7 @@
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 .celebrity {
 	max-width: 755px;
@@ -1139,6 +1263,33 @@
 	margin-left: 30px;
 	color: #1d04f7;
 }
+.div-loadmore2 {
+	margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 200px;
+    width: 100%;
+    height: 30px;
+	border-radius: 50px;
+    background-color: #f0c164;
+}
+.loadmore2 {
+	font-size: 15px;
+	color: black;
+    max-width: 200px;
+    width: 100%;
+    height: 30px;
+	border-radius: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+	font-family: 'Arya', sans-serif;
+}
+.loadmore2:hover {
+	color: #FFFFFF;
+	box-shadow: 1px 1px 10px #090E1D;
+}
 /* videos სექციის სტილები */
 .section-five {
 	max-width: 1200px;
@@ -1146,7 +1297,6 @@
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
-	margin-bottom: 20px;
 }
 .videos {
 	max-width: 755px;
@@ -1182,10 +1332,17 @@
 	background-color: #FFFFFF;
 	box-shadow: 5px 5px 20px #2737A0;
 }
-.video-youtube {
+.div-color {
 	max-width: 755px;
 	width: 100%;
 	height: 370px;
+	background-color: black;
+}
+.video-youtube {
+	max-width: 690px;
+	width: 100%;
+	height: 370px;
+	margin: 0 auto;
 }
 .video {
 	background-color: #2737A0;
@@ -1237,6 +1394,33 @@
 	width: 100%;
 	height: 445px;
 }
+.div-loadmore3 {
+	margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 200px;
+    width: 100%;
+    height: 30px;
+	border-radius: 50px;
+    background-color: #9499b4;
+}
+.loadmore3 {
+	font-size: 15px;
+	color: black;
+    max-width: 200px;
+    width: 100%;
+    height: 30px;
+	border-radius: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+	font-family: 'Arya', sans-serif;
+}
+.loadmore3:hover {
+	color: #FFFFFF;
+	box-shadow: 1px 1px 10px #090E1D;
+}
 /* footer სტილები */
 .footer {
 	background-color: #090E1D;
@@ -1244,7 +1428,7 @@
 }
 .footerdiv {
 	padding-top: 100px;
-	margin-top: 80px;
+	margin-top: 20px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -1272,6 +1456,14 @@
     height: 50px;
 	border-radius: 50px;
 	margin-top: 15px;
+	margin-right: 10px;
+}
+.a-icon1 {
+	max-width: 50px;
+    width: 100%;
+    height: 50px;
+	border-radius: 50px;
+	margin-bottom: 15px;
 	margin-right: 10px;
 }
 .icon1 {
