@@ -74,6 +74,7 @@
 	left: 15%;
 	position: absolute;
 	animation: santa 1s infinite 1s alternate;
+	display: block;
 }
 @keyframes santa {
 	0% {left: 15%;}
@@ -150,6 +151,7 @@
 	width: 33.33333333333333%;
 	opacity: 0.8;
 	position: relative;
+	display: block;
 }
 .bg-image:before {
 	content: '';
@@ -171,6 +173,7 @@
 	width: 33.33333333333333%;
 	opacity: 0.8;
 	position: relative;
+	display: block;
 }
 .bg-image1:before {
 	content: '';
@@ -193,6 +196,7 @@
 	width: 33.33333333333333%;
 	opacity: 0.8;
 	position: relative;
+	display: block;
 }
 .bg-image2:before {
 	content: '';
@@ -339,6 +343,8 @@
 	margin-top: 25px;
 	margin-left: 30px;
 	font-family: 'Arya', sans-serif;
+	max-width: 550px;
+	width: 100%;
 }
 .vogue-h3 {
 	color: #4feeae;
@@ -353,7 +359,7 @@
 	margin-top: 10px;
 	margin-left: 30px;
 	font-family: 'Arya', sans-serif;
-	max-width: 620px;
+	max-width: 590px;
 	width: 100%;
 }
 .div-readmore {
@@ -386,10 +392,11 @@
 }
 .style-hunter-div3 {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	max-width: 755px;
 	width: 100%;
-	height: 500px;
-	margin-top: 45px;
+	height: 545px;
 }
 .hunter-div1 {
 	max-width: 365px;
@@ -397,6 +404,7 @@
 	height: 500px;
 	box-shadow: 1px 1px 15px #F44336;
 	background-color: #FFFFFF;
+	margin-top: 45px;
 }
 .bg-image4 {
 	background-image: url(../images/girl3.jpg);
@@ -429,7 +437,7 @@
 	font-size: 22px;
 	margin-top: 25px;
 	margin-left: 30px;
-	max-width: 295px;
+	max-width: 245px;
 	width: 100%;
 	font-family: 'Arya', sans-serif;
 }
@@ -446,7 +454,7 @@
 	margin-top: 10px;
 	margin-left: 30px;
 	font-family: 'Arya', sans-serif;
-	max-width: 300px;
+	max-width: 270px;
 	width: 100%;
 }
 .div-readmore-fashion {
@@ -478,12 +486,12 @@
 	box-shadow: 1px 1px 10px #090E1D;
 }
 .hunter-div2 {
-	margin-left: 25px;
 	max-width: 365px;
 	width: 100%;
 	height: 500px;
 	box-shadow: 1px 1px 15px #F44336;
 	background-color: #FFFFFF;
+	margin-top: 45px;
 }
 .bg-image5 {
 	background-image: url(../images/healthy.jpg);
@@ -712,7 +720,7 @@
 }
 .post1-div {
 	margin-left: 15px;
-	max-width: 207px;
+	max-width: 200px;
 	width: 100%;
 }
 .post1-p {
@@ -720,6 +728,8 @@
 	color: #090E1D;
 	font-size: 16px;
 	font-family: 'Arya', sans-serif;
+	max-width: 200px;
+	width: 100%;
 }
 .post1-p1 {
 	margin-top: 10px;
@@ -855,6 +865,8 @@
 	margin-top: 25px;
 	margin-left: 30px;
 	font-family: 'Arya', sans-serif;
+	max-width: 500px;
+	width: 100%;
 }
 .world-h3 {
 	color: rgb(150, 146, 146);
@@ -869,7 +881,7 @@
 	margin-top: 10px;
 	margin-left: 30px;
 	font-family: 'Arya', sans-serif;
-	max-width: 620px;
+	max-width: 590px;
 	width: 100%;
 }
 .div-readmore1 {
@@ -996,7 +1008,7 @@
 .bg-image18-p {
 	color: #FFFFFF;
 	font-size: 44px;
-	max-width: 296px;
+	max-width: 260px;
 	width: 100%;
 	padding-top: 80px;
 	margin-left: 30px;
@@ -1031,7 +1043,7 @@
 .bg-image19-p {
 	color: #FFFFFF;
 	font-size: 44px;
-	max-width: 296px;
+	max-width: 200px;
 	width: 100%;
 	margin-top: 25px;
 	margin-left: 30px;
