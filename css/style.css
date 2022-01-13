@@ -21,8 +21,8 @@
 	width: 100%;
 	height: 35px;
 	background-color: #1A0E36;
-	padding-top: 10px;
 	justify-content: space-around;
+	align-items: center;
 }
 .div-ul-1 {
 	display: flex;
@@ -57,27 +57,28 @@
 	width: 100%;
 	height: 85px;
 	background-color: #FFFFFF;
-	padding-top: 10px;
-	justify-content: space-around;
+	padding: 30px;
+	justify-content: space-between;
 	align-items: center;
 	position: relative;
 }
 .meteor {
 	display: flex;
 	font-size: 45px;
+	letter-spacing: 5px;
 	font-family: 'Dosis', sans-serif;
 	color: black;
 }
 .image-santa {
 	width: 50px;
 	top: 40%;
-	left: 15%;
+	left: 17%;
 	position: absolute;
 	animation: santa 1s infinite 1s alternate;
 	display: block;
 }
 @keyframes santa {
-	0% {left: 15%;}
+	0% {left: 17%;}
 	100% {top: 1%;}
 }
 .navigation {
@@ -112,24 +113,66 @@
     position: absolute;
 	background-color: #EE9F00;
     transition-duration: 1s;
+	transition: transform 0.5s ease-in;
 }
-.div-i {
+.div-burger{
 	display: none;
-    color: black;
-    font-size: 25px;
+    width: 35px;
+	height: 30px;
+	cursor: pointer;
+	position: absolute;
+	top: 35px;
+	right: 70px;
+}
+.burger-line {
+	background-color: black;
+	width: 100%;
+	height: 4px;
+	transform: translate(-50%, -50%) rotate(0); 
+    transition: all 0.3s linear;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+}
+.line1 {
+	top: 20%;
+}
+.line3 {
+	top: 80%;
+}
+.active .line1 {
+	top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.active .line2 {
+	display: none;
+}
+.active .line3 {
+	top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.toggle .navigation-ul {
+	position: absolute;
+    top: 85px;
+    right: 7.5%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;	
 }
 .input {
 	position: relative;
-	height: 30px;
+	height: 20px;
 }
 .search {
-	height: 25px;
+	height: 20px;
+	width: 150px;
+	background-color: #767676;
 }
 .fa-search {
 	position: absolute;
 	right: 0;
 	top: 0;
-	margin-top: 5px;
+	margin-top: 3px;
 	margin-right: 5px;
 	color: #090E1D;
 	display: block;

@@ -46,16 +46,20 @@
 					<i class="fab fa-google-plus-square"></i>
 				</li>
 			</ul>
+			<div class="input">
+				<input class="search" type="search">
+				<i class="fas fa-search"></i>
+			</div>
 			<div>
 				<i class="fas fa-user"></i>
                 <a class="signin" href="#">sign in</a>
             </div>
 		</div>
-		<div class="header-div2">
+		<div class="header-div2" id="header">
 			<a class="meteor" href="index.html">Meteor</a>
 			<img class="image-santa" src="images/santa.png" alt="image">
 			<nav class="navigation">
-				<ul class="navigation-ul">
+				<ul class="navigation-ul" id="nav-ul">
 					<li class="navigation-li">
 						<a class="nav-a" href="index.html">Fashion</a>
 					</li>
@@ -76,12 +80,10 @@
 					</li>
 				</ul>
 			</nav>
-			<div class="div-i">
-				<i class="fas fa-bars"></i>
-			</div>
-			<div class="input">
-				<input class="search" type="search">
-				<i class="fas fa-search"></i>
+			<div class="div-burger" id="burger-bar">
+				<div class="burger-line line1"></div>
+				<div class="burger-line line2"></div>
+				<div class="burger-line line3"></div>
 			</div>
 		</div>
 	</header>
@@ -677,7 +679,7 @@
 				<h2 class="footer-h2">Contact Us</h2>
 				<input class="input-email" type="text" placeholder="Your email address" required>
 				<textarea class="message" name="message" id="mess" cols="30" rows="10" placeholder="Message..." required></textarea>
-				<button class="button" type="submit">
+				<button class="button" id="button-i" type="submit">
 					<i class="fas fa-paper-plane"></i>
 				</button>
 			</div>
@@ -691,5 +693,6 @@
 	<script>
 		$('.video-youtube').slick();
 	  </script>
+	<script src="js/script.js"></script>
 </body>
 </html>

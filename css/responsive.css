@@ -2,7 +2,7 @@
     .navigation-ul {
         display: none;
     }
-    .div-i {
+    .div-burger {
         display: block;
     }
     .style-hunter-ul {
@@ -25,6 +25,12 @@
     }
     .bg-image2 {
         width: 50%;
+    }  
+    .search {
+        display: none;
+    }
+    .fa-search {
+        display: none;
     }
 }
 @media (max-width: 1180px) {
@@ -139,12 +145,6 @@
     }
     .header-div1 {
         height: 35px;
-    }
-    .search {
-        display: none;
-    }
-    .fa-search {
-        display: none;
     }
     .style-hunter-div4 {
         margin-left: 0px;
