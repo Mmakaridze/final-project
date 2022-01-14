@@ -751,6 +751,7 @@
 }
 .child1 {
 	background-color: #476cc2;
+	padding: 2px;
 }
 .child1:hover {
 	-webkit-box-shadow: 1px 1px 20px #476cc2;
@@ -772,6 +773,7 @@
 }
 .child4 {
 	background-color: #f32d27;
+	
 }
 .child4:hover {
 	-webkit-box-shadow: 1px 1px 20px #f32d27;
@@ -779,6 +781,7 @@
 }
 .child5 {
 	background-color: #ab4ae4;
+	padding: 2px;
 }
 .child5:hover {
 	-webkit-box-shadow: 1px 1px 20px #ab4ae4;
