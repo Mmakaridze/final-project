@@ -117,7 +117,7 @@
     display: flex;
 }
 .navigation-li {
-	padding: 25px;	
+	margin-right: 50px;
 }
 .nav-a {
 	font-size: 20px;
@@ -194,7 +194,7 @@
 .toggle .navigation-ul {
 	position: absolute;
     top: 60px;
-    right: 5.5%;
+    right: 3%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -205,6 +205,15 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;	
+}
+.toggle .navigation-li {
+	padding: 8px;
+}
+.toggle .header-div2 {
+	height: 290px;
+}
+.toggle .section-one {
+	margin-top: 290px;
 }
 .input {
 	position: relative;

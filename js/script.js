@@ -1,5 +1,5 @@
 let burger = document.getElementById('burger-bar');
-let header = document.getElementById('header')
+let header = document.getElementById('header-h')
 
 burger.addEventListener('click', function() {
     burger.classList.toggle('active');
